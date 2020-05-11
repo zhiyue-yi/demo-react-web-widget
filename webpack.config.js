@@ -4,7 +4,7 @@ const path = require('path');
 const config = {
   entry: path.join(__dirname, './src/index.ts'),
   output: {
-    path: path.resolve(__dirname, './example'),
+    path: path.resolve(__dirname, './docs'),
     filename: 'simple-calendar.js',
   },
   devtool: 'source-map',
