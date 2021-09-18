@@ -100,7 +100,7 @@ function SimpleCalendar(props: SimpleCalendarProps) {
     return (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0;
   }
 
-  const days = isLeapYear ? DAYS_LEAP : DAYS;
+  const days = isLeapYear(year) ? DAYS_LEAP : DAYS;
 
   return (
     <Frame>
